@@ -29,6 +29,7 @@ ADD middle_name varchar(255) AFTER first_name;
 SELECT * FROM actor;
 
 #You realize that some of these actors have tremendously long last names. Change the data type of the middle_name column to blobs
+ALTER TABLE actor MODIFY COLUMN middle_name blob;
 
 # Now delete the middle_name column
 ALTER TABLE actor
@@ -54,6 +55,7 @@ WHERE first_name = 'HARPO' and last_name = 'WILLIAMS';
 
 # You cannot locate the schema of the address table. Which query would you use to re-create it?
    # content = metadata only
+
 # Use JOIN to display the first and last names, as well as the address, of each staff member. Use the tables staff and address
 SELECT staff.first_name, staff.last_name, address.address
 FROM staff
@@ -87,8 +89,22 @@ GROUP BY customer.customer_id
 ORDER BY customer.last_name;
 
 # Use subqueries to display the titles of movies starting with the letters K and Q whose language is English. 
+SELECT title FROM film
+WHERE title LIKE 'K%' or title LIKE 'Q%'and language_id in
+(SELECT language_id FROM language
+WHERE name = 'English');
 
 # Use subqueries to display all actors who appear in the film Alone Trip
+SELECT first_name, last_name FROM actor
+WHERE actor_id IN
+(
+ SELECT actor_id FROM film_actor
+ WHERE film_id =
+ (
+  SELECT film_id FROM film
+  WHERE title = 'Alone Trip'
+ )
+);
 
 # You want to run an email marketing campaign in Canada, for which you will need the names and email addresses of all Canadian customers.
 SELECT customer.first_name, customer.last_name, customer.email, country.country FROM customer
