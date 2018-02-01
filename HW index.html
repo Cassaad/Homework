@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link type:"css/text" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<link type:"css/text" rel="stylesheet" href="myfile">
+
+	<head>
+		<title>Web Visualization Dashboard (Lattitude)</title>
+	</head>
+	
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  			<a class="navbar-brand"><span class="badge badge-info"><h3>Lattitude</h3></span></a>
+ 
+
+  			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    			<ul class="navbar-nav my-2 my-sm-0">
+    				<li class="nav-item dropdown">
+        				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
+        					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          						<a class="dropdown-item" href="file:///C:\Users\chris\OneDrive\Documents\GitHub\Homework\W12\HW%20temperature.html">Max Temperature</a>
+         						<a class="dropdown-item" href="#">Humidity</a>
+         						<a class="dropdown-item" href="#">Cloudiness</a>
+         						<a class="dropdown-item" href="#">Wind Speed</a>
+        					</div>
+      				</li>
+
+      				<li class="nav-item active">
+        				<a class="nav-link" href="#">Comparison</a>
+      				</li>
+
+      				<li class="nav-item active">
+        				<a class="nav-link" href="#">Data</a>
+      				</li>		
+    			</ul>
+  			</div>
+		</nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-7">
+          <h3 style="background-color:#00838f ; color:white"><strong> Weather Analysis</strong></h3>
+          <p><h5>The Purpose of this project was to anlayze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble dataset on over 500 cities.</h5></p>
+          <img style="border:1px solid lightblue; height:15%" src="/Users/chris/OneDrive/Documents/GitHub/Homework/W12/Lattitude vs Temperature.png" class="pull-left"> 
+          <p><h5>After assembling the dataset, we used Matplotlib to plot various aspects of the weather Vs latitude. We looked at Temperature, Cloudiness, Wind Speed and Humidity. The site provides the source data and visualizations created as part of the analysis, as well as explanations and description of any trends and correlations witnessed</h5></p>
+        </div>
+
+          <div class="col-sm-4">
+            <h3 style="background-color:#00838f ; color:white"><strong> Visualization</strong></h3>
+            <img style="border:1px solid lightblue; height:10%" src="/Users/chris/OneDrive/Documents/GitHub/Homework/W12/Lattitude vs Temperature.png"/>
+            <br></br>
+           
+            <img style="border:1px solid lightblue; height:10%" src="/Users/chris/OneDrive/Documents/GitHub/Homework/W12/lattitude vs humidity.png"/>
+            <br></br>
+            <img style="border:1px solid lightblue; height:10%" src="/Users/chris/OneDrive/Documents/GitHub/Homework/W12/Latitude vs cloudiness.png"/>
+            <br></br>
+
+            <img style="border:1px solid lightblue; height:10%" src="/Users/chris/OneDrive/Documents/GitHub/Homework/W12/Latitude vs windspeed.png"/>
+          </div>
+        </div>
+      </div>
+	</body>
+</html>
