@@ -11,12 +11,48 @@
 </head>
 
 <body>
-  <div class="container">
+<p style="margin-top: 3em"></p>
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-md-4">
+      <H1 align="center">Aliens R Real</H1>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+     <div class="row">
+
+      <div class="col-md-2">
         <div class="form-group">
-          <input type="text" class="form-control" id="datetime" placeholder="Datetime"-->
-          <a id="search" class="btn btn-default">Search</a>
+          <input type="text" class="form-control" id="date" placeholder="Datetime">
+        </div>
+      </div>
+
+      <div class="col-md-2">
+        <div class="form-group">
+          <input type="text" class="form-control" id="city" placeholder="City">
+        </div>
+      </div>
+
+      <div class="col-md-2">
+        <div class="form-group">
+          <input type="text" class="form-control" id="state" placeholder="State">
+        </div>
+      </div>
+      
+      <div class="col-md-2">
+        <div class="form-group">
+          <input type="text" class="form-control" id="country" placeholder="Country">
+        </div>
+      </div>
+    <!--div class="row"-->
+      <div class="col-md-2">
+        <div class="form-group">
+          <input type="text" class="form-control" id="shape" placeholder="Shape">
+        </div>
+      </div>
+        <div class="col-md-2">
+           <a id="search" class="btn btn-link">Search</a>
+        </div>
         </div>
       </div>
     </div>
@@ -39,9 +75,14 @@
         </table>
       </div>
     </div>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 text-center">
+        <button id="load-btn" class="btn btn-primary">Load More UFOs</button>
+      </div>
+    </div>
   </div>
   <script src="data.js" type="text/javascript"></script>
-  <script src="index_2.js" type="text/javascript"></script>
+  <script src="index_3pagination.js" type="text/javascript"></script>
 </body>
 
 </html>
